@@ -3,10 +3,10 @@ package main
 import (
 	"flag"
 	"fmt"
-	"tescat"
+	"github.com/kevinmahaffey/tescat"
 )
 
-var port = flag.Int("p", 0, "Destination port for UDP broadcasts (typically 20100)")
+var port = flag.Int("p", 20100, "Destination port for UDP broadcasts")
 var fname = flag.String("f", "", "Filename to read pcap from")
 
 func main() {
