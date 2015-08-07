@@ -9,15 +9,19 @@ This was developed while auditing the internal LAN on the Tesla Model S.
 
 Installation
 ------------
-
+```
   go get github.com/kevinmahaffey/tescat
   go build src/github.com/kevinmahaffey/tescat/cmd/tescat.go
-
+```
 Running
 -------
   
   Listen for UDP traffic destined to a given port
+```
   ./tescat -p 20100
+```
 
   Process UDP data from a pcap file looking for packets destined to a given port
+```
   ./tescat -f mypcap.pcap -p 20100
+```
